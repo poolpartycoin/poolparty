@@ -1,0 +1,20 @@
+{
+  "name": "poolparty",
+  "version": "1.0.0",
+  "description": "Crypto Coin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poolpartycoin/poolparty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poolpartycoin/poolparty/issues"
+  },
+  "homepage": "https://github.com/poolpartycoin/poolparty#readme"
+}
