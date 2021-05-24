@@ -25,3 +25,6 @@ hs_err_pid*
 # build artifacts
 *build/
 node_modules
+
+# misc
+*.DS__Store

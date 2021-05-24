@@ -16,6 +16,10 @@ module.exports = async function main(callback) {
         await pp.add(42)
         new_value = await pp.retrieve()
         console.log("PoolParty new value is", new_value.toString());
+
+        if (pp.state == Waiting) {
+          state = await pp.isActive()
+        }
   
       callback(0);
     } catch (error) {
