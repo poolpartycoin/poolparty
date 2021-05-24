@@ -1,6 +1,6 @@
 // migrations/2_deploy.js
-const Box = artifacts.require("Box");
+const pp = artifacts.require("PoolParty");
 
 module.exports = async function (deployer) {
-  await deployer.deploy(Box);
+  await deployer.deploy(pp);
 };

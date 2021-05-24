@@ -6,12 +6,16 @@ module.exports = async function main(callback) {
         //console.log(accounts)
 
         // setup the contract for access
-        const Box = artifacts.require("Box")
-        const box = await Box.deployed()
+        const PoolParty = artifacts.require("PoolParty")
+        const pp = await PoolParty.deployed()
 
         // call the contract for it's value
-        value = await box.retrieve()
-        console.log("Box value is", value.toString());
+        value = await pp.retrieve()
+        console.log("PoolParty value is", value.toString());
+
+        await pp.add(42)
+        new_value = await pp.retrieve()
+        console.log("PoolParty new value is", new_value.toString());
   
       callback(0);
     } catch (error) {

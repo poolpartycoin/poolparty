@@ -2,7 +2,7 @@
 Crypto Coin
 
 # What is here?
-* contracts/Box.sol is the entry point, and is managed by OpenZeppelin's `Ownable` contract.  There's an automated unit test under the `tests` folder the corresponds to the Box contract.
+* contracts/Poolparty.sol is the entry point, and is managed by OpenZeppelin's `Ownable` contract.  There's an automated unit test under the `tests` folder the corresponds to the PoolParty contract.
 
 # development
 
@@ -13,6 +13,7 @@ Crypto Coin
 1. `npm install --save-dev ganache-cli`
 1. `npm install --save-dev chai`
 1. `npm install --save-dev @openzeppelin/test-helpers`
+1. `npm install --save-dev truffle-hdwallet-provider`
 
 
 ## workspace setup
@@ -33,10 +34,10 @@ deploy to local testnet
 
 ## interact with contract via cli (examples)
 1. `npx truffle console --network development`
-1. `box = await Box.deployed()`
-1. `await box.store(42)`
-1. `await box.retrieve()`
-1. `(await box.retrieve()).toString()`
+1. `pp = await PoolParty.deployed()`
+1. `await pp.store(42)`
+1. `await pp.retrieve()`
+1. `(await pp.retrieve()).toString()`
 [Truffle console documentation](https://www.trufflesuite.com/docs/truffle/getting-started/using-truffle-develop-and-the-console) for reference
 
 ## interact with contract programmetically

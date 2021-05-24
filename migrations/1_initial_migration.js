@@ -1,5 +1,5 @@
-const Box = artifacts.require("Box");
+const pp = artifacts.require("PoolParty");
 
 module.exports = function (deployer) {
-  deployer.deploy(Box);
+  deployer.deploy(pp);
 };
