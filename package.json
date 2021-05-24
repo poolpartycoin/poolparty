@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/poolpartycoin/poolparty/issues"
   },
-  "homepage": "https://github.com/poolpartycoin/poolparty#readme",
+  "homepage": ".",
   "devDependencies": {
     "@openzeppelin/contracts": "^4.1.0",
     "@openzeppelin/test-helpers": "^0.5.11",
