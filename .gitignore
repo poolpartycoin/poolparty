@@ -28,3 +28,4 @@ node_modules
 
 # misc
 *.DS__Store
+*.secret
